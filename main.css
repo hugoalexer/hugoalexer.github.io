@@ -106,7 +106,7 @@ ul li { margin-bottom: 0.5rem; font-size: 0.95rem; color: #bbbbbb; }
 #footer p { 
   font-size: 0.7rem; 
   color: var(--text-muted); 
-  text-transform: lowercase; /* Todo a minúsculas */
+  /* text-transform: lowercase; Todo a minúsculas */
   letter-spacing: 0.05em; 
 }
 
