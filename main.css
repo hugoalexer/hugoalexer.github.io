@@ -24,7 +24,7 @@ body {
 /* 1. BARRA SUPERIOR ROJA SOLIDA */
 body::before {
   content: ""; display: block; height: 4px;
-  background: var(--pure-red);
+  background: var(--color-cobalt-500);
 }
 
 #elementos {
