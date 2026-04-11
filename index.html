@@ -5,17 +5,14 @@
 <title>Hugo Alexer</title>
 <link rel="stylesheet" type="text/css" href="main.css">
 <style>
-  /* Ajuste específico para que la foto no sea gigante */
   #menubar-photo img {
     width: 100%;
-    max-width: 200px; /* Ajusta este valor según prefieras */
+    max-width: 200px;
     height: auto;
-    border-radius: 8px; /* Opcional: bordes ligeramente redondeados */
+    border-radius: 8px;
     display: block;
     margin: 0 auto;
   }
-  
-  /* Asegura que el contenedor no se desborde */
   #menubar-photo {
     padding: 10px;
     text-align: center;
@@ -23,7 +20,7 @@
 </style>
 </head>
 <body>
-<div id="container">
+<div id="elementos">
   <div id="navibar">
     <button class="lang-btn active" onclick="location.href='index.html'">EN</button>
     <button class="lang-btn" onclick="location.href='es/index.html'">ES</button>
@@ -34,7 +31,7 @@
       <img src="hugo-pic.jpg" alt="Dr. Hugo Alexer Pérez">
     </div>
     <table>
-      <tr><td class="active-page" style="color:var(--color-cobalt-100);border-bottom:2px solid var(--color-cobalt-500);margin-bottom:0.75rem;">Home</td></tr>
+      <tr><td class="active-page">Home</td></tr>
       <tr><td><a href="alumni.html">Alumni</a></td></tr>
       <tr><td><a href="projects.html">Projects</a></td></tr>
       <tr><td><a href="publications.html">Publications</a></td></tr>
@@ -70,7 +67,7 @@
   </div>
 
   <div id="footer">
-    <p>Updated on April 11, 2026. &mdash; https://hugoalexer.github.io</p>
+    <p>Updated on April 11, 2026. — https://hugoalexer.github.io</p>
   </div>
 </div>
 </body>
