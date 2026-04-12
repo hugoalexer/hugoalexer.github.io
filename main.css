@@ -65,14 +65,14 @@ body::before {
 
 /* 2. LÍNEA AZUL PARA PÁGINA ACTIVA */
 #menubar td.active-page {
-  border-bottom: 2px solid var(--subtle-blue);
+  border-bottom: 2px solid var(--pure-red);
   color: var(--subtle-blue);
   margin-bottom: 0.75rem;
 }
 
 #menubar a {
   color: var(--text-main); font-size: 0.85rem; text-decoration: none;
-  text-transform: uppercase; letter-spacing: 0.05em;
+  text-transform: lowercase; letter-spacing: 0.05em;
 }
 
 #menubar a:hover { color: var(--lilac-link); }
