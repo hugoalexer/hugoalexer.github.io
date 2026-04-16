@@ -1,86 +1,382 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Hugo Alexer</title>
-<link rel="stylesheet" type="text/css" href="main.css">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>
-  #menubar-photo img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-  }
-  #menubar-photo {
-    padding: 10px;
-    text-align: center;
-  }
-</style>
-</head>
-<body>
-<div id="elementos">
-  <div id="navibar">
-    <button class="lang-btn active" onclick="location.href='index.html'">EN</button>
-    <button class="lang-btn" onclick="location.href='es/index.html'">ES</button>
-  </div>
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+    I am currently an assistant professor at the computer science department in Stanford university. 
+</p>
+  <p>
+    
+    My research uses tools from statistics to make machine learning systems more robust and trustworthy &#8212; especially in complex systems such as large language models. The goal of my research is to use robustness and worst-case performance as a lens to understand and make progress on several fundamental challenges in machine learning and natural language processing. A few topics of recent interest are,
+    
+    <dl style="PADDING-LEFT: 40px">
+    <dt><b>Long-tail behavior</b></dt> <dd>How can we ensure that a machine learning system won't fail catastrophically in the wild under changing conditions?</dd>
+    <dt><b>Understanding</b></dt>
+    <dd>A system which <i> understands </i> how to answer questions or generate text should also do so robustly out-of-domain. </dd>
+    <dt><b>Fairness</b></dt>  <dd>Machine learning systems which rely on unreliable correlations can result in spurious and harmful predictions.</dd>
+    </dl>
 
-  <div id="menubar">
-    <div id="menubar-photo">
-      <img src="hugo-pic.jpg" alt="Dr. Hugo Alexer Pérez">
-    </div>
-    <table>
-      <tr><td class="active-page">Home</td></tr>
-      <tr><td><a href="publications.html">Publications</a></td></tr>
-      <tr><td><a href="alumni.html">Alumni</a></td></tr>
-      <tr><td><a href="projects.html">Projects</a></td></tr>
-    </table>
+  </p>
+  <p>
+    Previously, I was a post-doc at Stanford working for <a href=https://web.stanford.edu/~jduchi/ target="_blank">John C. Duchi</a> and <a href=https://cs.stanford.edu/~pliang/ target="_blank">Percy Liang</a> on tradeoffs between the average and worst-case performance of machine learning models. Before my post-doc, I was a graduate student at MIT co-advised by <a href=https://people.csail.mit.edu/tommi/ target="_blank">Tommi Jaakkola</a> and <a href=http://cgs.csail.mit.edu/ target="_blank">David Gifford</a> and a undergraduate student at Harvard in statistics and math advised by <a href=http://www.people.fas.harvard.edu/~airoldi/ target="_blank">Edoardo Airoldi</a>.
+  </p>
+
 </div>
 
-  <div id="content">
-    <div id="content-inner">
-      <h1>Dr. Hugo Alexer Pérez </h1>
-      <ul><li>Ph.D. in Industrial Engineering</li></ul>
 
-      <h2>Contact Information</h2>
-      <table class="contact-table">
-        <tr><td><strong>E-mail</strong></td><td><a href="mailto:hugo.perez@ibero.mx">hugo.perez@ibero.mx</a></td></tr>
-        <tr><td><strong>ORCID</strong></td><td><a href="https://orcid.org/0000-0001-6300-7208">0000-0001-6300-7208</a></td></tr>
-        <tr><td><strong>GitHub</strong></td><td><a href="https://github.com/hugoalexer/">github.com/hugoalexer</a></td></tr>
-        <tr><td><strong>LinkedIn</strong></td><td><a href="https://www.linkedin.com/in/hugoalexer/">linkedin.com/in/hugoalexer</a></td></tr>
-        <tr><td><strong>Zoom</strong></td><td><a href="https://ibero.zoom.us/j/8741503225 ">Call</a></td></tr>
-      </table>
-  <p>
-    My research focuses on applied optimization and statistical analysis, to develop models that drive data-informed decision-making. I am particularly interested in machine learning, business analytics, and design of experiments, with a current focus on industrial and educational applications.
-  </p>
+<div class="docs-section" id="people">
+  <h4>Advisees</h4>
 
-  <p>
-    I began my academic career at the Tuxtla Gutierrez Institute of Technology (now 
-    <a href="https://www.tuxtla.tecnm.mx/">TecNM</a>). My journey includes over four years at 
-    <a href="https://www.anahuac.mx/">Universidad Anáhuac México</a>, where I received a Teaching Award in 2014. 
-    Currently, I am a Full-Time Professor at <a href="https://ibero.mx/es-MX/home">Universidad Iberoamericana</a> within the <a href="https://www.ibero.mx/es-MX/departamento/ingenieria-quimica-industrial-y-de-alimentos">
-    Department of Chemical, Industrial, and Food Engineering</a>.
-  </p>
 
-  <p>
-    I hold a PhD in Industrial Engineering from <a href="https://cadit.anahuac.mx/n/">CADIT</a> with a minor in optimization, an M.S. in Systems Engineering from <a href="https://www.uanl.mx/">UANL</a>, and a B.S. in Industrial Engineering from <a href="https://www.tuxtla.tecnm.mx/">TecNM</a>. My technical expertise spans operations research, logistics, and advanced industrial engineering.
-  </p>
+      {% assign current_people = site.data.students.students | where: "category", "current" %}
+      {% for person in current_people %}
+        <div class="paper">
+          <p style="line-height: 0.5">
+            {% if person.link %}
+            <a href="{{ person.link | prepend: site.baseurl }}" target="_blank"><b>{{ person.name }}</b></a>
+            {% else %}
+            <b>{{ person.name }}</b>
+              
+              {% endif %}
+               ({{ person.time }}) <i>{{ person.place }}</i>
+          </p>
+        </div>
+      {% endfor %}
+</div>
 
-  <ul>
-    <li>
-      CV available on <a href="https://www.overleaf.com/read/rmjjvyhmnpcm#c6af25">Overleaf</a> 
-      <small>(direct PDF download)</small>
-    </li>
-    <li>
-      Citations via <a href="https://scholar.google.com/citations?user=zr1vKDYAAAAJ&hl=en">Google Scholar</a>
-    </li>
+
+
+<!--
+  <h4>Recent Research Areas</h4>
+
+<div class="docs-section" id="projects">
+
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <center>
+                  <b>{{ project.title }}</b> <br/>
+                  </center>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+
+</div>
+
+--!>
+
+
+<!-- ========== PUBLICATIONS ========== -->
+
+
+<!-- old people 
+<div class="docs-section" id="people">
+  <h4>Advisees</h4>
+
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#current">Current</div></li>
+    <li><div class="button" data-ref="#former">Former</div></li>
   </ul>
-  <div id="footer">
-    <p>Last updated: April 14, 2026</p>
+
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="current">
+      {% assign current_people = site.data.students.students | where: "category", "current" %}
+      {% for person in current_people %}
+        <div class="paper">
+          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
+          <p><i>{{ person.place }}</i></p>
+          {% if person.current %}
+          <p> {{ person.current }} </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="former">
+      {% assign former_people = site.data.students.students | where: "category", "former" %}
+      {% for person in former_people %}
+        <div class="paper">
+          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
+          <p><i>{{ person.place }}</i></p>
+          {% if person.current %}
+          <p> {{ person.current }} </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
   </div>
 </div>
-</body>
-</html>
+-->
 
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="https://scholar.google.com/citations?user=5ygiTwsAAAAJ" target="_blank">Google Scholar</a>.</p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-sel">Selected and Recent Papers</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>    
+    <li><div class="button" data-ref="#papers-ML">Stats+ML</div></li>
+    <li><div class="button" data-ref="#papers-NLP">NLP</div></li>
+    <li><div class="button" data-ref="#papers-Bio">Comp Bio</div></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="papers-sel">
+      {% assign papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- All PAPERS -->
+    <div class="tab-pane" id="papers-all">
+      {% assign papers = site.data.publications.papers %}
+      {% for paper in papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+
+    <!-- ML PAPERS -->
+    <div class="tab-pane" id="papers-ML">
+      {% assign ml_papers = site.data.publications.papers | where: "statsml", "y" %}
+      {% for paper in ml_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- NLP PAPERS -->
+    <div class="tab-pane" id="papers-NLP">
+      {% assign nlp_papers = site.data.publications.papers | where: "nlp", "y" %}
+      {% for paper in nlp_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+          {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- Bio PAPERS -->
+    <div class="tab-pane" id="papers-Bio">
+      {% assign bio_papers = site.data.publications.papers | where: "bio", "y" %}
+      {% for paper in bio_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+        </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="docs-section" id="teaching">
+  <h4>Teaching</h4>
+  {% assign current_classes = site.data.classes.classes | where: "category", "current" %}
+  {% for class in current_classes %}
+  <div class="class">
+    <p class="title"><b>{{ class.name }}</b> ({{ class.time }}): <a href={{class.link}} target="_blank">{{ class.title }}</a></p>
+  </div>
+  {% endfor %}
+</div>
+
+<!--
+<div class="docs-section" id="talks">
+  <h4>Talks and slides</h4>
+  {% assign current_talks = site.data.talks.talks | where: "category", "current" %}
+  {% for talk in current_talks %}
+  <div class="talk">
+    <p class="title"><b>{{ talk.name }}</b> ({{ talk.time }}): <a href={{talk.link}} target="_blank">{{ talk.title }}</a></p>
+  </div>
+  {% endfor %}
+</div>
+--!>
+
+<div class="docs-section" id="former">
+  <h4>Former Advisees</h4>
+
+
+      {% assign former_people = site.data.students.students | where: "category", "former" %}
+      {% for person in former_people %}
+        <div class="paper">
+          <p style="line-height: 0.5">
+            {% if person.link %}
+            <a href="{{ person.link | prepend: site.baseurl }}" target="_blank"><b>{{ person.name }}</b></a>
+            {% else %}
+            <b>{{ person.name }}</b>
+              
+              {% endif %}
+               ({{ person.time }}) <i>{{ person.place }}</i>
+          </p>
+        </div>
+      {% endfor %}
+</div>
+
+
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Resume</h4>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+  <div class="docs-section" id="ack">
+  <h4>Acknowledgement</h4>
+  <p>
+    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
+  </p>
+
+</div>
