@@ -1,107 +1,78 @@
 students:
     - name: "Sergio Patiño Alvarez"
       time: "2013"
-      place: "SAIL Postdoc (w/ Dan Jurafsky), now at Anthropic."
+      place: "Undergraduate student, no Independent consultant"
       category: "former"
-      link: https://www.cs.cornell.edu/~esindurmus/
+      link:
 
     - name: "Armando Comellas Montalvo"
       time: "2013"
-      place: "Consultor as Full-stack Software Developer"
+      place: "Undergraduate student, no Independent consultant"
       category: "former"
       link: https://github.com/armandocomellas1 
 
     - name: "Giancarlo De Vecchi"
       time: "2014"
-      place: "Sales and Marketing Manager, now at Veneto Group Holdings."
+      place: "Graduate student, now at Veneto Group Holdings"
       category: "former"
       link: https://www.linkedin.com/in/gianfranco-de-vecchi-045317b4/
 
-    - name: "Yu Sun"
-      time: "2023-"
-      place: "Postdoc (w/ Sanmi Koyejo and Carlos Guestrin)"
-      category: "current"
-      link: https://yueatsprograms.github.io/
-
-    - name: "Ian Covert"
-      time: "2023-"
-      place: "Postdoc (w/ James Zou)"
-      category: "current"
-      link: https://iancovert.com/
-
-    - name: "Daniel Kang"
-      time: "2021-2022"
-      place: "Graduate Student (w/ Matei Zaharia and Peter Bailis), now assistant prof at UIUC."
+    - name: "José Gustavo Fuentes"
+      time: "2024"
+      place: "Graduate student, now at Insaite"
       category: "former"
-      link: https://ddkang.github.io/
+      link: https://www.linkedin.com/in/josegustavofuentescabrera/ 
 
-    - name: "Ishaan Gulrajani"
-      time: "2021-2022"
-      place: "Graduate Student (on leave), at OpenAI"
+    - name: "Adriana L. Fajardo Martos"
+      time: "2020"
+      place: "Graduate student, now at Ibero-American University"
       category: "former"
-      link: https://ishaan.io/
+      link: https://www.linkedin.com/in/adriana-fajardo-62a2a75b/ 
 
-    - name: "Lisa Li"
-      time: "2021-"
-      place: "Graduate Student (w/ Percy Liang)"
-      category: "current"
-      link: https://xiangli1999.github.io/
-
-    - name: "Xuechen Li"
-      time: "2021-2024"
-      place: "Graduate Student (w/ Carlos Guestrin), now at X.ai"
+    - name: "Claudia Rojas Adeath"
+      time: "2020"
+      place: "Graduate student, now at Scotiabank"
       category: "former"
-      link: https://www.lxuechen.com/
+      link: https://www.linkedin.com/in/claudia-rojas-3875a06/
 
-    - name: "Rohan Taori"
-      time: "2021-2024"
-      place: "Graduate Student, now at Anthropic"
+    - name: "Erika Rosales Espejel"
+      time: "2018"
+      place: "Graduate Student,now at The Estée Lauder Companies"
       category: "former"
-      link: https://www.rohantaori.com/
+      link: https://www.linkedin.com/in/erika-abigail-rosales-espejel-a54358209/ 
 
-    - name: "Tianyi Zhang"
-      time: "2021-"
+    - name: "Manuel Zamora Monroy"
+      time: "2018"
+      place: "Graduate Student, now at Ximple"
+      category: "former"
+      link: https://www.linkedin.com/in/manueljzm/ 
+
+    - name: "Oscar Bezanilla Alfaro"
+      time: "2016"
+      place: "Graduate Student, now at Kekén"
+      category: "former"
+      link: https://www.linkedin.com/in/gustavo-bezanilla-1a242ba2/
+
+    - name: "Laura Gutiérrez Jiménez"
+      time: "2015"
+      place: "Graduate Student, now at Rich Products Corporation"
+      category: "former"
+      link: https://www.linkedin.com/in/laura-guti%C3%A9rrez-jim%C3%A9nez-4a804529/
+
+    - name: "Francisco Arreola"
+      time: "2025-"
       place: "Graduate Student"
       category: "current"
-      link: https://tiiiger.github.io/
+      link: 
 
-    - name: "Yann Dubois"
-      time: "2022-"
-      place: "Graduate Student (w/ Percy Liang)"
+    - name: "Begoña Irigoyen"
+      time: "2026-"
+      place: "Graduate Student"
       category: "current"
-      link: https://yanndubs.github.io/
+      link: https://www.linkedin.com/in/bego%C3%B1a-irigoyen-procurement/ 
 
-    - name: "Neil Band"
-      time: "2023-"
-      place: "Graduate Student (w/ Tengyu Ma)"
+    - name: "Antonio Purón Mier y Terán
+      time: "2021-"
+      place: "Graduate Student (w/ Isidro Soria)"
       category: "current"
-      link: https://nband.github.io/
-
-    - name: "Nicole Meister"
-      time: "2023-"
-      place: "Graduate Student (w/ Carlos Guestrin)"
-      category: "current"
-      link: https://nicolemeister.github.io/
-
-    - name: "Zitong Yang"
-      time: "2024-"
-      place: "Graduate Student (w/ Emmanuel Candes)"
-      category: "current"
-      link: https://zitongyang.github.io/
-
-    - name: "Chenglei Si"
-      time: "2024-"
-      place: "Graduate Student (w/ Diyi Yang)"
-      category: "current"
-      link: https://noviscl.github.io/
-
-    - name: "Christopher Mohri"
-      time: "2024-"
-      place: "Graduate Student (w/ John Duchi)"
-      category: "current"
-
-    - name: "Tristan Thrush"
-      time: "2024-"
-      place: "Graduate Student (w/ Chris Potts)"
-      category: "current"
-      link: http://www.tristanthrush.com/
+      link: https://www.linkedin.com/in/antonio-puron-328966a5/
