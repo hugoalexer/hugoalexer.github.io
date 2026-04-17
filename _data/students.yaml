@@ -1,21 +1,21 @@
 students:
-    - name: "Esin Durmus"
-      time: "2021-2023"
+    - name: "Sergio Patiño Alvarez"
+      time: "2013"
       place: "SAIL Postdoc (w/ Dan Jurafsky), now at Anthropic."
       category: "former"
       link: https://www.cs.cornell.edu/~esindurmus/
 
-    - name: "Niladri Chatterji"
-      time: "2021-2023"
-      place: "SAIL Postdoc (w/ Percy Liang), now at Meta"
+    - name: "Armando Comellas Montalvo"
+      time: "2013"
+      place: "Consultor as Full-stack Software Developer"
       category: "former"
-      link: https://niladri-chatterji.github.io/
+      link: https://github.com/armandocomellas1 
 
-    - name: "Shibani Santurkar"
-      time: "2021-2023"
-      place: "Postdoc (w/ Percy Liang and Tengyu Ma), now at OpenAI."
+    - name: "Giancarlo De Vecchi"
+      time: "2014"
+      place: "Sales and Marketing Manager, now at Veneto Group Holdings."
       category: "former"
-      link: https://shibanisanturkar.com/
+      link: https://www.linkedin.com/in/gianfranco-de-vecchi-045317b4/
 
     - name: "Yu Sun"
       time: "2023-"
