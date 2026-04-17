@@ -46,8 +46,6 @@ title: Home
       {% endfor %}
 </div>
 
-
-
 <!--
   <h4>Recent Research Areas</h4>
 
@@ -130,6 +128,8 @@ title: Home
   </div>
 </div>
 -->
+
+
 <!-- AQUI ESTOY COMENTANDO LAS PUBLICACIONES --
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
@@ -175,7 +175,8 @@ title: Home
         </div>
       {% endfor %}
     </div>
---!> AQUI TERMINO DE COMENTAR LAS PUBLICACIONES
+AQUI TERMINO DE COMENTAR LAS PUBLICACIONES
+    --!> 
 
 
     <!-- All PAPERS -->
@@ -327,7 +328,6 @@ title: Home
 <div class="docs-section" id="former">
   <h4>Former Advisees</h4>
 
-
       {% assign former_people = site.data.students.students | where: "category", "former" %}
       {% for person in former_people %}
         <div class="paper">
@@ -343,7 +343,6 @@ title: Home
         </div>
       {% endfor %}
 </div>
-
 
 
 <!-- ========== RESUME ========== -->
