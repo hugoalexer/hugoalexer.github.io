@@ -6,6 +6,12 @@ students:
       category: "former"
       link: https://www.linkedin.com/in/josegustavofuentescabrera/ 
 
+    - name: "Victor Galicia Rodriguez"
+      time: "2022"
+      place: "Graduate student, now at Soriana"
+      category: "former"
+      link: https://www.linkedin.com/in/adriana-fajardo-62a2a75b/ 
+
     - name: "Adriana Fajardo Martos"
       time: "2020"
       place: "Graduate student, now at Ibero-American University"
@@ -20,7 +26,7 @@ students:
 
     - name: "Erika Rosales Espejel"
       time: "2018"
-      place: "Graduate Student,now at The Estée Lauder Companies"
+      place: "Graduate Student, now at The Estée Lauder Companies"
       category: "former"
       link: https://www.linkedin.com/in/erika-abigail-rosales-espejel-a54358209/ 
 
